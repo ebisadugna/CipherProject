@@ -15,7 +15,6 @@ export default observer(function NavBar()
             </Menu.Item>
             <Menu.Item position='right'>
 
-                <span>{user?.username||"user"}</span>
                 <Dropdown pointing='top left' text={user?.username}>
                     <Dropdown.Menu>
                         <Dropdown.Item onClick={logout}  text="Logout" icon='power'/>
